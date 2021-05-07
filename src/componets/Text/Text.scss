@@ -1,0 +1,19 @@
+.text {
+  font-size: 18px;
+  color: #9194a1;
+}
+
+.text--left {
+  text-align: left;
+  padding: 30px 30px 30px 0;
+}
+
+.text--center {
+  text-align: center;
+  padding: 30px;
+}
+
+.text--right {
+  text-align: right;
+  padding: 0 30px 30px 30px;
+}

@@ -1,0 +1,31 @@
+@import '../../styles/base';
+
+.button {
+  width: auto;
+  padding: 15px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 8px 8px rgba(73, 93, 207, 0.2);
+
+  @include desktop{
+    
+  }
+}
+
+.button--primary {
+  background-color: #5368df;
+  color: white;
+}
+
+.button--secondary {
+  background-color: #f7f7f7;  
+}
+
+.button--error {
+  background-color: #fa5757;
+  color: white;
+}

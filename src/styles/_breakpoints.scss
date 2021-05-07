@@ -1,0 +1,8 @@
+$viewport-mobile: 600px;
+$viewport-desktop: 1200px;
+
+@mixin desktop{
+  @media (min-width: #{$viewport-desktop}){
+    @content;
+  }
+}
