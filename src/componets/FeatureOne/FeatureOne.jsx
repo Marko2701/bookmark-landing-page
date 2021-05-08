@@ -9,12 +9,14 @@ const FeatureOne = () => {
   return (
     <div className='featureOne'>
       <img className='featureOne__image' src={featureOneIcon} alt=''/>
-      <Subtitle 
-        text='Bookmark in one click'
-        alignment='center'
-      />
-      <Text text='Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.' alignment='center'/>
-      <Button text='More Info' type='primary'/>
+      <div className='featureOne__text-wrapper'>
+        <Subtitle 
+          text='Bookmark in one click'
+          alignment='center'
+        />
+        <Text text='Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.' alignment='center'/>
+        <Button text='More Info' type='primary'/>
+      </div>
     </div>
   )
 }

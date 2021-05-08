@@ -7,9 +7,11 @@ const Button = ({
   text,
   type = 'primary',
   onClick,
+  className,
 }) => {
   const buttonClasses = cx({
     button: true,
+    [className]: true,
     'button--primary': type === 'primary',
     'button--secondary': type === 'secondary',
     'button--error': type === 'error',
@@ -24,7 +26,8 @@ const Button = ({
 Button.propTypes = {
   text: PropTypes.string,
   type: PropTypes.string,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  className: PropTypes.string,
 };
 
 export default Button;

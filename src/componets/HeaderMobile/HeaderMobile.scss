@@ -1,11 +1,17 @@
+@import '../../styles/base';
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 30px;
+  padding: 40px 25px;
+
+  @include desktop {
+    display: none;
+  }
 }
 
-.menuWrapper {
+.header__menu-wrapper {
   padding: 40px 30px;
   position: fixed;
   inset: 0px;
@@ -14,37 +20,46 @@
   flex-direction: column;
 }
 
-.navbar {
+.header__navbar {
   display: flex;
   flex-direction: column;
 }
 
-.imageWrapper {
+.header__image-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
 }
 
-.navbar__item {
+.header__navbar-item {
   color: white;
-  font-size: 26px;
+  font-size: 18px;
   letter-spacing: 3px;
   text-transform: uppercase;
   height: 80px;
   background: none;
   border-left: none;
   border-right: none;
-  border-top: 1px solid rgba(128, 128, 128, 0.604);
   border-bottom: 1px solid rgba(128, 128, 128, 0.604);
+  border-top: none;
+
+  &:first-child {
+    border-top: 1px solid rgba(128, 128, 128, 0.604);
+  }
+
+  &:hover {
+    color: #fa5757;
+  }
 }
 
-.navbar__login {
-  font-size: 26px;
+.header__navbar-login {
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
   margin-top: 30px;
+  margin-bottom: 350px;
   height: 60px;
   background: none;
   color: white;
@@ -52,8 +67,21 @@
   border-radius: 5px;
 }
 
-.socialWrapper {
-  margin-top: 220px;
-  display: flex;
-  justify-content: center; 
+.header__close-button {
+  cursor: pointer;
+  background: none;
+  border: 0;
 }
+
+.header__navbar-login {
+  cursor: pointer;
+}
+
+.header__social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+

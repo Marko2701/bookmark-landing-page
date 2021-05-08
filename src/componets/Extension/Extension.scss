@@ -1,9 +1,32 @@
-.extension {
-  padding-top: 80px;
-}
+@import '../../styles/base';
 
-.extension__cardWrapper {
+.extension {
+  padding: 80px 25px 0 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.extension__card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include desktop {
+    flex-direction: row;
+
+    .extension__text {
+      padding: 100px;
+    }
+
+    .extension__firefox {
+      margin-top: 80px;
+    }
+
+    .extension__opera {
+      margin-top: 160px;
+    }
+  }
+}
+
+

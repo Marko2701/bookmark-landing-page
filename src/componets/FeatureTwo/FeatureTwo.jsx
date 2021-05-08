@@ -9,12 +9,14 @@ const FeatureTwo = () => {
   return (
     <div className='featureTwo'>
       <img className='featureTwo__image'src={featureTwoIcon} alt=''/>
-      <Subtitle 
-        text='Intelligent search'
-        alignment='center'
-      />
-      <Text text='Our powerful search featuer will help you find saved sited in no time at all. No need to trawl through all of your bookmarks.' alignment='center'/>
-      <Button text='More Info' type='primary'/>
+      <div className='featureTwo__text-wrapper'>
+        <Subtitle 
+          text='Intelligent search'
+          alignment='center'
+        />
+        <Text text='Our powerful search featuer will help you find saved sited in no time at all. No need to trawl through all of your bookmarks.' alignment='center'/>
+        <Button text='More Info' type='primary'/>
+      </div>
     </div>
   )
 }

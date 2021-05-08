@@ -1,4 +1,5 @@
-import {Header} from './componets/Header/Header';
+import HeaderMobile from './componets/HeaderMobile/HeaderMobile';
+import HeaderDesktop from './componets/HeaderDesktop/HeaderDesktop';
 import Hero from './componets/Hero/Hero';
 import Features from './componets/Features/Features';
 import Extension from './componets/Extension/Extension';
@@ -9,8 +10,9 @@ import './styles/styles.scss';
 
 const App = () => {
   return (
-    <div className="App">
-      <Header />
+    <div className="app">
+      <HeaderMobile />
+      <HeaderDesktop />
       <Hero />
       <Features />
       <Extension />

@@ -9,12 +9,14 @@ const FeatureThree = () => {
   return (
     <div className='featureThree'>
       <img className='featureThree__image' src={featureThreeIcon} alt=''/>
-      <Subtitle 
-        text='Share your bookmarks'
-        alignment='center'
-      />
-      <Text text='Easly share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.' alignment='center'/>
-      <Button text='More Info' type='primary'/>
+      <div className='featureThree__text-wrapper'>
+        <Subtitle 
+          text='Share your bookmarks'
+          alignment='center'
+        />
+        <Text text='Easly share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.' alignment='center'/>
+        <Button text='More Info' type='primary'/>
+      </div>
     </div>
   )
 }

@@ -1,32 +1,44 @@
 @import '../../styles/base';
 
 .button {
+  cursor: pointer;
   width: auto;
   padding: 15px 20px;
-  margin: 0 10px;
   border: none;
   border-radius: 5px;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
   box-shadow: 0 8px 8px rgba(73, 93, 207, 0.2);
-
-  @include desktop{
-    
-  }
 }
 
 .button--primary {
   background-color: #5368df;
   color: white;
+
+  &:hover {
+    background: none;
+    box-shadow: inset 0 0 0 2px #5368df;
+    color: #5368df;
+  }
 }
 
 .button--secondary {
-  background-color: #f7f7f7;  
+  background-color: #f7f7f7;
+  
+  &:hover {
+    background: #fff;
+    box-shadow: inset 0 0 0 2px #000;
+  }  
 }
 
 .button--error {
-  width: 450px;
   background-color: #fa5757;
   color: white;
+
+  &:hover {
+    background: #fff;
+    box-shadow: inset 0 0 0 2px #fa5757;
+    color: #fa5757;
+  }
 }
