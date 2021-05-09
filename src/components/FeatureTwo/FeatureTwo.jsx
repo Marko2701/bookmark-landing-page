@@ -8,7 +8,7 @@ import './FeatureTwo.scss';
 const FeatureTwo = () => {
   return (
     <div className='featureTwo'>
-      <img className='featureTwo__image'src={featureTwoIcon} alt=''/>
+      <img className='featureTwo__image' src={featureTwoIcon} alt=''/>
       <div className='featureTwo__text-wrapper'>
         <Subtitle 
           text='Intelligent search'

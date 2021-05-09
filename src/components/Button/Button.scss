@@ -13,13 +13,13 @@
 }
 
 .button--primary {
-  background-color: #5368df;
-  color: white;
+  background-color: $colorBlue;
+  color: $colorWhite;
 
   &:hover {
     background: none;
-    box-shadow: inset 0 0 0 2px #5368df;
-    color: #5368df;
+    box-shadow: inset 0 0 0 2px $colorBlue;
+    color: $colorBlue;
   }
 }
 
@@ -27,18 +27,18 @@
   background-color: #f7f7f7;
   
   &:hover {
-    background: #fff;
+    background: $colorWhite;
     box-shadow: inset 0 0 0 2px #000;
   }  
 }
 
 .button--error {
-  background-color: #fa5757;
-  color: white;
+  background-color: $colorRed;
+  color: $colorWhite;
 
   &:hover {
-    background: #fff;
-    box-shadow: inset 0 0 0 2px #fa5757;
-    color: #fa5757;
+    background: $colorWhite;
+    box-shadow: inset 0 0 0 2px $colorRed;
+    color: $colorRed;
   }
 }

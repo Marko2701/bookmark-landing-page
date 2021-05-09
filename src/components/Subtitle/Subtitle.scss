@@ -1,5 +1,7 @@
+@import '../../styles/base';
+
 .subtitle {
-  font-size: 2rem;
+  font-size: 32px;
 }
 
 .subtitle--left {
@@ -15,6 +17,6 @@
 }
 
 .subtitle--white {
-  color: white;
+  color: $colorWhite;
   font-size: 26px;
 }

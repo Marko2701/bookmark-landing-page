@@ -16,12 +16,12 @@
   border: none;
   background: none;
   text-transform: uppercase;
-  color: #9194a1;
+  color: $colorGray;
   font-size: 14px;
   font-weight: 600;
 
   &:hover {
-    color: #fa5757;
+    color: $colorRed;
   }
 }
 

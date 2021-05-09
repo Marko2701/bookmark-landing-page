@@ -33,7 +33,7 @@
 }
 
 .header__navbar-item {
-  color: white;
+  color: $colorWhite;
   font-size: 18px;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -41,15 +41,15 @@
   background: none;
   border-left: none;
   border-right: none;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.604);
+  border-bottom: 1px solid $colorDarkGray;
   border-top: none;
 
   &:first-child {
-    border-top: 1px solid rgba(128, 128, 128, 0.604);
+    border-top: 1px solid $colorDarkGray;
   }
 
   &:hover {
-    color: #fa5757;
+    color: $colorRed;
   }
 }
 
@@ -62,8 +62,8 @@
   margin-bottom: 350px;
   height: 60px;
   background: none;
-  color: white;
-  border: 2px solid white;
+  color: $colorWhite;
+  border: 2px solid $colorWhite;
   border-radius: 5px;
 }
 

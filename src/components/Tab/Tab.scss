@@ -1,3 +1,5 @@
+@import '../../styles/base';
+
 .tab {
   font-size: 18px;
   font-weight: 400;
@@ -7,12 +9,12 @@
   outline: none;
   background: none;
   border-bottom: 0.5px solid rgb(219, 219, 219);
-  color: rgb(147, 148, 155);
+  color: $colorGray;
   transition: all 0.1s ease-in-out 0s;
   padding: 15px 35px;
 }
 
 .tab--active {
-  border-bottom: 4px solid rgb(250, 88, 86);
+  border-bottom: 4px solid $colorRed;
   color: rgb(43, 46, 55);
 }
