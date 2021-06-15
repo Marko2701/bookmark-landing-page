@@ -9,7 +9,7 @@ const HeaderDesktop = (props) => {
     <div className='header-desktop'>
       <Logo />
       <div className='header-desktop__navbar'>
-          <Link to='/components'><button className='header-desktop__navbar-item'>Components</button></Link>
+          <Link className='header-desktop__components' to='/components'><button className='header-desktop__navbar-item'>Components</button></Link>
           <button className='header-desktop__navbar-item'>Features</button>
           <button className='header-desktop__navbar-item'>Pricing</button>
           <button className='header-desktop__navbar-item'>Contact</button>
